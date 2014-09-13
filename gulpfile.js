@@ -39,7 +39,7 @@ gulp.task('build-min', function () {
     .pipe(prefix('last 1 version', '> 1%'))
     .pipe(csso())
     .pipe(rename('main.min.css'))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('dist/css'));
 });
 
 // Styledocco
